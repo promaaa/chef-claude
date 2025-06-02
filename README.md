@@ -1,6 +1,6 @@
-# Chef Claude
+# Chef Claude👨‍🍳
 
-**Chef Claude 👨‍🍳** is an innovative React web application that uses artificial intelligence to generate personalized recipes based on the ingredients you have on hand. No more wondering what to cook - let Chef Claude inspire you!
+**Chef Claude** is an innovative React web application that uses artificial intelligence to generate personalized recipes based on the ingredients you have on hand. No more wondering what to cook - let Chef Claude inspire you!
 
 ## Features
 
@@ -154,4 +154,4 @@ This project is under the MIT license. See the `LICENSE` file for more details.
 
 ---
 
-**Enjoy cooking with Chef Claude!**
+**Enjoy cooking with Chef Claude!** 🍽️

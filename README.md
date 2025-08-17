@@ -47,8 +47,8 @@ npm install
 Create a `.env` file at the root of the project and add your API keys:
 
 ```env
-ANTHROPIC_API_KEY=your_anthropic_api_key
-HF_ACCESS_TOKEN=your_hugging_face_token
+VITE_ANTHROPIC_API_KEY=your_anthropic_api_key
+VITE_HF_ACCESS_TOKEN=your_hugging_face_token
 ```
 
 ### 4. Obtain API keys

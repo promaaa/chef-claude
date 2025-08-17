@@ -1,4 +1,5 @@
 import React from "react"
+
 import ReactMarkdown from "react-markdown"
 
 export default function ClaudeRecipe({ recipe }) {
@@ -11,4 +12,5 @@ export default function ClaudeRecipe({ recipe }) {
         </section>
     )
 }
+
 

@@ -1,7 +1,8 @@
 import React from "react"
 import IngredientsList from "./components/IngredientsList"
 import ClaudeRecipe from "./components/ClaudeRecipe"
-import { getRecipeFromChefClaude, getRecipeFromMistral } from "./ai"
+import MistralRecipe from "./components/MistralRecipe"
+import { getRecipeFromChefClaude } from "./ai"
 
 export default function Main() {
     const [ingredients, setIngredients] = React.useState(
@@ -31,14 +32,18 @@ export default function Main() {
                 <button>Add ingredient</button>
             </form>
 
-            {ingredients.length > 0 &&
-                <IngredientsList
-                    ingredients={ingredients}
-                    getRecipe={getRecipe}
-                />
-            }
+            {ingredients.length > 0 && (
+                <>
+                    <IngredientsList
+                        ingredients={ingredients}
+                        getRecipe={getRecipe}
+                    />
+                    <MistralRecipe ingredients={ingredients} />
+                </>
+            )}
 
             {recipe && <ClaudeRecipe recipe={recipe} />}
         </main>
     )
 }
+

@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s06j1gu",
-  "description": "https://scrimba.com/frontend-path-c0j/~04x6",
+  "name": "chefgen",
+  "description": "ChefGen React app with OpenAI/Mistral/Gemini providers and demo mode",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,9 +10,6 @@
   "dependencies": {
     "react": "19.0.0-rc-8b08e99e-20240713",
     "react-dom": "19.0.0-rc-8b08e99e-20240713",
-    "@anthropic-ai/sdk": "0.27.3",
-    "@huggingface/inference": "2.8.1",
-    "react-markdown": "9.0.1",
     "vite": "latest"
   },
   "devDependencies": {

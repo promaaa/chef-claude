@@ -1,62 +1,42 @@
-# ChefGen (React)
+# Chef Claude
 
-React port of your “ChefGen” app (formerly “ChefClaude”) in the `chefgen` folder, keeping the same UX and core features with a minimal structure.
+AI-powered recipe generator with OpenAI, Mistral, and Gemini integration.
 
 ## Features
 
-- Providers: OpenAI, Mistral, Gemini, plus a local Demo (mock)
-- Model selector (curated list + Custom field)
-- API keys management: show/hide and optional local storage
-- Temperature, presets (Speed/Balanced/Quality), max ready time
-- Ingredients: fast entry (Enter/comma), clickable tags, “Pantry” shortcuts
-- Dietary preferences, servings, skill level, cuisine
-- Generate, copy rendered recipe, download JSON, “Surprise me”
-- Light/Dark theme persisted in `localStorage` + “About” modal
+- Multiple AI providers (OpenAI, Mistral, Gemini)
+- Demo mode (no API key required)
+- Dark/Light theme
+- Responsive design
+- Fast generation
 
-## Prerequisites
-
-- Node.js 16+ and npm
-
-## Install
+## Quick Start
 
 ```bash
-cd chefgen
 npm install
-```
-
-## Start
-
-```bash
 npm run dev
 ```
 
-Available at `http://localhost:5173`.
-
-## Build
+## Deploy to GitHub Pages
 
 ```bash
-npm run build
-npm run preview
+./deploy.sh
 ```
 
-## Structure
+## Tech Stack
 
+- React 19
+- Vite
+- CSS Variables
+
+## Documentation
+
+- [Full Documentation](docs/)
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [Development Guide](docs/DEVELOPMENT.md)
+- [Contributing](docs/CONTRIBUTING.md)
+
+## License
+
+MIT
 ```
-chefgen/
-├── App.jsx
-├── Header.jsx
-├── Main.jsx
-├── index.css
-├── index.html
-├── index.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
-## Security
-
-- API calls run client-side for local/private use. Do not deploy this with exposed keys.
-- Avoid committing keys. If you must deploy, add a backend (or serverless) to proxy requests.
-
-Enjoy cooking with ChefGen! 🍝
